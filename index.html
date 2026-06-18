@@ -6,7 +6,6 @@
 <title>Confirmação de Reserva</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -83,6 +82,10 @@ button:hover{
     font-weight:bold;
 }
 
+.fade{
+    animation:fade .5s ease;
+}
+
 @keyframes fade{
     from{
         opacity:0;
@@ -93,11 +96,6 @@ button:hover{
         transform:translateY(0);
     }
 }
-
-.fade{
-    animation:fade .5s ease;
-}
-
 </style>
 </head>
 
@@ -212,7 +210,8 @@ function alternativaInvalida(){
 
 document.getElementById("msg").innerHTML = `
 <div class="error">
-Resposta inválida.<br><br>
+Resposta inválida.
+<br><br>
 Favor selecionar uma alternativa compatível com a realidade.
 </div>
 `;
